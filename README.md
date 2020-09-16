@@ -17,7 +17,9 @@
 Set the server port and Pre-Shared Key with the environment variables, and start server.
 
 ```bash
-SERVER_PORT=8090 SORACOM_BEAM_SHARED_SECRET=topsecret go run main.go
+make prepare
+make build
+SERVER_PORT=8090 SORACOM_BEAM_SHARED_SECRET=topsecret bin/soracom-beam-signature-verifier-example-go*
 ```
 
 Request the following on the device with SORACOM Beam configured to the SORACOM Beam endopoint.
