@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/2matzzz/soracom-beam-signature-verifier-example-go/soracom"
+	"github.com/soracom-labs/soracom-beam-signature-verifier-example-go/soracom"
 )
 
 func app(w http.ResponseWriter, r *http.Request) {
