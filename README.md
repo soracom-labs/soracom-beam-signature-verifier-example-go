@@ -3,11 +3,11 @@
 ## Support services
 
 - SORACOM Air for Cellular
- - HTTP
- - TCP
- - UDP
- - SMS
- - USSD
+- HTTP
+- TCP
+- UDP
+- SMS
+- USSD
 - SORACOM Air for Sigfox
 - SORACOM Air for LoRaWAN (JP Only)
 - SORACOM Inventory (LwM2M Notify adapter)
@@ -17,7 +17,6 @@
 Set the server port and Pre-Shared Key with the environment variables, and start server.
 
 ```bash
-make prepare
 make build
 SERVER_PORT=8090 SORACOM_BEAM_SHARED_SECRET=topsecret bin/soracom-beam-signature-verifier-example-go*
 ```

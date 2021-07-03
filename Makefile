@@ -32,6 +32,3 @@ test:
 
 clean:
 	rm -rf ${TARGET} ${TARGET}_*_*
-
-prepare:
-	go get
