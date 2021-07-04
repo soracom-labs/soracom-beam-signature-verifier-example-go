@@ -3,11 +3,11 @@
 ## Support services
 
 - SORACOM Air for Cellular
-- HTTP
-- TCP
-- UDP
-- SMS
-- USSD
+  - HTTP
+  - TCP
+  - UDP
+  - SMS
+  - USSD
 - SORACOM Air for Sigfox
 - SORACOM Air for LoRaWAN (JP Only)
 - SORACOM Inventory (LwM2M Notify adapter)
