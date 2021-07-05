@@ -1,7 +1,7 @@
 TARGET=soracom-beam-signature-verifier-example-go
 GOVERSION=$(shell go version)
-GOOS=$(word 1,$(subst /, ,$(lastword $(GOVERSION))))
-GOARCH=$(word 2,$(subst /, ,$(lastword $(GOVERSION))))
+GOOS=$(shell go env GOOS)
+GOARCH=$(shell go env GOARCH)
 
 .PHONY: build xbuild test ${TARGET}_$(GOOS)_$(GOARCH)$(SUFFIX) clean prepare
 
@@ -32,6 +32,3 @@ test:
 
 clean:
 	rm -rf ${TARGET} ${TARGET}_*_*
-
-prepare:
-	go get
